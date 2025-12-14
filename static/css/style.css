@@ -1,0 +1,135 @@
+/* ===== GLOBAL ===== */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: linear-gradient(135deg, #0a0a0a, #1a1a2e);
+  color: #ffffff;
+  font-family: 'Poppins', Arial, sans-serif;
+  text-align: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+/* ===== FORM ===== */
+form {
+  margin: 25px auto;
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+input {
+  padding: 12px;
+  border-radius: 8px;
+  border: none;
+  background: #1e1e1e;
+  color: white;
+  outline: none;
+  min-width: 220px;
+}
+
+input::placeholder {
+  color: #aaa;
+}
+
+button {
+  padding: 12px 20px;
+  border-radius: 30px;
+  border: none;
+  font-weight: bold;
+  background: linear-gradient(135deg, #1db954, #1ed760);
+  color: black;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(29, 185, 84, 0.4);
+}
+
+button:active {
+  transform: scale(0.96);
+}
+
+/* ===== SONG CARD ===== */
+.song {
+  background: #181818;
+  padding: 18px;
+  margin: 15px auto;
+  width: 90%;
+  max-width: 700px;
+  border-radius: 14px;
+  transition: 0.3s;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+}
+
+.song:hover {
+  background: #202020;
+  transform: translateY(-4px);
+}
+
+/* ===== AUDIO ===== */
+audio {
+  width: 100%;
+  margin-top: 12px;
+  accent-color: #1db954;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 600px) {
+  body {
+    padding: 15px;
+  }
+
+  input {
+    width: 100%;
+  }
+
+  button {
+    width: 100%;
+  }
+
+  .song {
+    width: 100%;
+  }
+}
+
+/* ===== FOOTER ===== */
+
+footer {
+  margin-top: 50px;
+  padding: 25px 15px;
+  text-align: center;
+  font-size: 14px;
+  color: #b3b3b3;
+  background: rgba(255, 255, 255, 0.03);
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(6px);
+}
+
+/* Footer text spacing */
+footer p {
+  margin: 6px 0;
+  line-height: 1.6;
+}
+
+/* Highlight name or brand */
+footer strong {
+  color: #1db954;
+  font-weight: 600;
+}
+
+/* Responsive tweak */
+@media (max-width: 480px) {
+  footer {
+    font-size: 13px;
+    padding: 20px 10px;
+  }
+}
+
